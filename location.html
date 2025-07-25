@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location - Lahcen Farm</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Responsive styles for all screen sizes */
+    @media screen and (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 1.8rem !important;
+      }
+      .hero-content p {
+        font-size: 1rem !important;
+        padding: 0 1rem;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5rem;
+      }
+      .logo-container {
+        justify-content: center;
+        padding: 0.5rem;
+      }
+    }
+
+    /* Base responsive layout improvements */
+    .hero {
+      min-height: 80vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      margin: 2rem auto;
+      max-width: min(90%, 800px);
+    }
+
+    /* Card grid system */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      padding: 2rem 1.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* General responsive improvements */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section-container {
+      max-width: min(90%, 1200px);
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Button improvements */
+    .cta-btn, .shop-btn {
+      display: inline-block;
+      padding: 0.8em 1.6em;
+      margin: 0.5rem;
+      white-space: nowrap;
+    }
+
+    /* Text responsiveness */
+    @media screen and (max-width: 480px) {
+      h1 { font-size: 1.5rem !important; }
+      h2 { font-size: 1.3rem !important; }
+      h3 { font-size: 1.1rem !important; }
+      p { font-size: 0.95rem !important; }
+    }
+
+    /* Layout fixes for very small screens */
+    @media screen and (max-width: 360px) {
+      .section-container {
+        padding: 1rem 0.5rem;
+      }
+      .card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="image.jpg" alt="FOM AFSAHEY logo" class="logo-img">
+        <span class="logo-text">FOM AFSAHEY</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Plan Your Visit</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="location" style="display: flex; gap: 2.5rem; align-items: flex-start; flex-wrap: wrap; margin-bottom: 2rem;">
+      <div style="flex:0 0 320px; max-width: 100%;">
+        <div class="map-container" style="border-radius:16px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,0.10); margin-bottom:1.2rem;">
+          <iframe src="https://www.google.com/maps?q=29.701991,-8.15397&hl=en&z=16&output=embed" style="border:0;width:100%;height:320px;" allowfullscreen loading="lazy" title="FOM AFSAHEY Google Map"></iframe>
+        </div>
+        <div style="text-align:center; display:flex; flex-direction:column; gap:1rem; margin-bottom:2.2rem;">
+          <a href="https://www.google.com/maps/place/29%C2%B042'07.2%22N+8%C2%B009'14.3%22W/@29.701991,-8.1565503,808m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d29.701991!4d-8.15397?entry=ttu&g_ep=EgoyMDI1MDcxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="cta-btn" style="font-size:1.08rem;">Get Directions</a>
+          <a href="shop.html" class="cta-btn" style="font-size:1.08rem; background:#2b5229; border-color:#2b5229;">Contact Us</a>
+        </div>
+      </div>
+      <div style="flex:1; min-width:240px;">
+        <h2>Welcome to FOM AFSAHEY: Your Desert Oasis</h2>
+        <p style="font-size:1.15rem; color:#333; margin-bottom:1.5rem; line-height:1.8;">Discover a thriving oasis in the heart of the Moroccan desert, where Lahcen's vision has transformed barren land into a sustainable paradise. Join us to plant trees, learn about desert agriculture, and experience the tranquil beauty of our flourishing farm.</p>
+        <h3 style="margin-top:2.2rem; font-size:1.2rem; color:#222;">🚗 <strong>How to Find Us</strong></h3>
+        <ul style="margin-bottom:2rem; line-height:1.7;">
+          <li><strong>By Car:</strong> Use our what3words address <span style="background:#f5f5f5; padding:2px 6px; border-radius:4px;">///Localities.negotiator.exemplify</span> or follow the map directions above. We offer convenient on-site parking.</li>
+          <li><strong>From TATA:</strong> Our farm is easily accessible from the town of TATA. Local taxis and transport services are available for your convenience.</li>
+        </ul>
+        <h3 style="font-size:1.2rem; color:#222;">🌴 <strong>Experience Our Farm</strong></h3>
+        <ul style="margin-bottom:2.5rem; line-height:1.7;">
+          <li><span style="color:#2b5229">🌳</span> Explore our grove of over 800 thriving olive and palm trees</li>
+          <li><span style="color:#227acc">⚡</span> Witness sustainable farming with our solar-powered irrigation system</li>
+          <li><span style="color:#b87d3b">👋</span> Meet Lahcen and discover the inspiring story behind FOM AFSAHEY</li>
+          <li><span style="color:#3d8c40">🌱</span> Leave your legacy by planting a tree and receiving a personalized certificate</li>
+          <li><span style="color:#cd853f">☕</span> Savor traditional Moroccan tea in our serene garden setting</li>
+        </ul>
+
+        <div style="margin-top:2.5rem; background:#f9f9f9; padding:1.5rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.05);">
+          <h4 style="font-size:1.1rem; color:#222; margin-bottom:1rem;">✨ <strong>Plan Your Visit</strong></h4>
+          <p style="color:#444; line-height:1.7;">We welcome visitors year-round. For the best experience, we recommend visiting during early morning or late afternoon hours. Groups of 5 or more, please contact us in advance to ensure we can provide you with the best possible experience.</p>
+        </div>
+
+        <div style="margin-top:2.5rem;">
+          <h3 style="font-size:1.2rem; margin-bottom:1.5rem; text-align:center; color:#222;">📸 <strong>Glimpses of Our Paradise</strong></h3>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.8rem; margin-top:1.5rem;">
+            <div style="text-align:center;">
+              <img src="birds.JPG" alt="Birds at our water feature" style="width:100%; height:180px; object-fit:cover; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+              <p style="margin-top:0.8rem; color:#666; font-style:italic;">Desert birds finding sanctuary at our water feature</p>
+            </div>
+            <div style="text-align:center;">
+              <img src="make a tea.jpeg" alt="Traditional tea preparation" style="width:100%; height:180px; object-fit:cover; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+              <p style="margin-top:0.8rem; color:#666; font-style:italic;">Traditional tea preparation in the shade</p>
+            </div>
+            <div style="text-align:center;">
+              <img src="olive.JPG" alt="Olive trees at FOM AFSAHEY" style="width:100%; height:180px; object-fit:cover; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+              <p style="margin-top:0.8rem; color:#666; font-style:italic;">Our flourishing olive grove</p>
+            </div>
+            <div style="text-align:center;">
+              <img src="melograne.JPG" alt="Pomegranate trees at FOM AFSAHEY" style="width:100%; height:180px; object-fit:cover; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+              <p style="margin-top:0.8rem; color:#666; font-style:italic;">Fresh pomegranates growing in our garden</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>FOM AFSAHEY — Cultivating hope in the desert. Thank you for supporting our journey.</p>
+    <div class="footer-note">© 2025 FOM AFSAHEY. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

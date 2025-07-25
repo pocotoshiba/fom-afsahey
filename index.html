@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOM AFSAHEY - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Responsive styles for all screen sizes */
+    @media screen and (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 1.8rem !important;
+      }
+      .hero-content p {
+        font-size: 1rem !important;
+        padding: 0 1rem;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5rem;
+      }
+      .logo-container {
+        justify-content: center;
+        padding: 0.5rem;
+      }
+    }
+
+    /* Base responsive layout improvements */
+    .hero {
+      min-height: 80vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      margin: 2rem auto;
+      max-width: min(90%, 800px);
+    }
+
+    /* Card grid system */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      padding: 2rem 1.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* General responsive improvements */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section-container {
+      max-width: min(90%, 1200px);
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Button improvements */
+    .cta-btn, .shop-btn {
+      display: inline-block;
+      padding: 0.8em 1.6em;
+      margin: 0.5rem;
+      white-space: nowrap;
+    }
+
+    /* Text responsiveness */
+    @media screen and (max-width: 480px) {
+      h1 { font-size: 1.5rem !important; }
+      h2 { font-size: 1.3rem !important; }
+      h3 { font-size: 1.1rem !important; }
+      p { font-size: 0.95rem !important; }
+    }
+
+    /* Layout fixes for very small screens */
+    @media screen and (max-width: 360px) {
+      .section-container {
+        padding: 1rem 0.5rem;
+      }
+      .card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="image.jpg" alt="FOM AFSAHEY logo" class="logo-img">
+        <span class="logo-text">FOM AFSAHEY</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Plan Your Visit</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <img src="image.jpg" alt="FOM AFSAHEY" class="hero-img">
+      <div class="hero-content">
+        <h1 style="font-size:2.5rem; margin-bottom:0.7rem;">A Vision to Make the Desert Green Again</h1>
+        <p style="font-size:1.18rem; color:#f3f3f3; max-width:600px; margin:0 auto 1.5rem auto;">Fom Afsahey is a vision brought to life by Lahcen, an 88-year-old farmer who transformed empty desert land into a living oasis. Over the past 30 years, he has planted over 800 trees, mainly olives and palms. Today, this project invites people from around the world to contribute, plant, and be part of a mission to make the desert green again.</p>
+        <a href="about.html" class="cta-btn">Support the Dream</a>
+      </div>
+    </section>
+    <section style="max-width:950px; margin:2.5rem auto; padding:0 1rem;">
+      <h2 style="text-align:center; margin-bottom:2rem; font-size:2rem; color:#222;">How You Can Help</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;">
+        <div style="background:#fff; border-radius:14px; box-shadow:0 2px 16px rgba(0,0,0,0.07); padding:2rem 1.5rem; flex:1 1 220px; min-width:220px; max-width:300px; text-align:center;">
+          <h3 style="margin-bottom:0.7rem; color:#2d7a46;">Plant a Tree</h3>
+          <p style="color:#444; margin-bottom:1.2rem;">Leave your mark in the desert. Sponsor or plant a tree and help Afsahey grow for generations to come.</p>
+          <a href="shop.html" class="shop-btn">Plant Now</a>
+        </div>
+        <div style="background:#fff; border-radius:14px; box-shadow:0 2px 16px rgba(0,0,0,0.07); padding:2rem 1.5rem; flex:1 1 220px; min-width:220px; max-width:300px; text-align:center;">
+          <h3 style="margin-bottom:0.7rem; color:#e07a5f;">Donate</h3>
+          <p style="color:#444; margin-bottom:1.2rem;">Support water, solar, and land restoration. Every contribution brings us closer to a greener future.</p>
+          <a href="donate.html" class="shop-btn">Donate</a>
+        </div>
+        <div style="background:#fff; border-radius:14px; box-shadow:0 2px 16px rgba(0,0,0,0.07); padding:2rem 1.5rem; flex:1 1 220px; min-width:220px; max-width:300px; text-align:center;">
+          <h3 style="margin-bottom:0.7rem; color:#3d405b;">Visit the Farm</h3>
+          <p style="color:#444; margin-bottom:1.2rem;">Experience Afsahey in person. Walk among the trees, meet Lahcen, and see the transformation for yourself.</p>
+          <a href="location.html" class="shop-btn">Plan Your Visit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>FOM AFSAHEY — Cultivating hope in the desert. Thank you for supporting our journey.</p>
+    <div class="footer-note">© 2025 FOM AFSAHEY. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

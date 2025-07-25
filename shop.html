@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Lahcen Farm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="image.jpg" alt="FOM AFSAHEY logo" class="logo-img">
+        <span class="logo-text">FOM AFSAHEY</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Plan Your Visit</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section style="max-width: 1100px; margin: 2.5rem auto; padding: 0 1rem;">
+      <h2 style="font-size:2.4rem; margin-bottom:1.5rem; text-align:center;">Support Our Desert Oasis</h2>
+      <p style="text-align:center; color:#444; font-size:1.15rem; max-width:800px; margin:0 auto 3rem; line-height:1.7;">Your contribution helps us nurture life in the desert. Choose how you'd like to be part of our growing story.</p>
+      
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2.5rem; margin-bottom:3rem;">
+        <!-- Plant Your Tree Card -->
+        <div style="background:#fff; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.08); padding:2rem; display:flex; flex-direction:column;">
+          <div style="background:#f8f8f8; padding:1.5rem; border-radius:12px; margin-bottom:1.5rem;">
+            <h3 style="font-size:1.4rem; color:#2b5229; margin-bottom:0.5rem;">🌳 Plant Your Legacy Tree</h3>
+            <p style="color:#666; line-height:1.6; margin-bottom:1rem;">Visit FOM AFSAHEY and plant your own tree. Each tree you plant helps expand our green oasis and earns you a special certificate marking your contribution.</p>
+            <ul style="color:#555; margin:1rem 0; padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;">Personal tree planting experience</li>
+              <li style="margin-bottom:0.5rem;">Named certificate of planting</li>
+              <li style="margin-bottom:0.5rem;">Regular updates on your tree's growth</li>
+              <li>Traditional tea ceremony during planting</li>
+            </ul>
+          </div>
+          <a href="location.html" class="cta-btn" style="text-align:center; margin-top:auto;">Visit & Plant Your Tree</a>
+        </div>
+
+        <!-- Support Materials Card -->
+        <div style="background:#fff; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.08); padding:2rem; display:flex; flex-direction:column;">
+          <div style="background:#f8f8f8; padding:1.5rem; border-radius:12px; margin-bottom:1.5rem;">
+            <h3 style="font-size:1.4rem; color:#227acc; margin-bottom:0.5rem;">🌱 Support Our Land</h3>
+            <p style="color:#666; line-height:1.6; margin-bottom:1rem;">Help us acquire essential materials to nurture this land. Your support enables sustainable desert farming and continued growth.</p>
+            <ul style="color:#555; margin:1rem 0; padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;">Farming tools and equipment</li>
+              <li style="margin-bottom:0.5rem;">Irrigation supplies</li>
+              <li style="margin-bottom:0.5rem;">Solar system batteries</li>
+              <li>Soil enrichment materials</li>
+            </ul>
+          </div>
+          <a href="donate.html" class="cta-btn" style="text-align:center; margin-top:auto; background:#227acc; border-color:#227acc;">Support Our Mission</a>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div style="max-width:600px; margin:4rem auto; background:#fff; padding:2.5rem; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+        <h3 style="font-size:1.8rem; margin-bottom:1.5rem; text-align:center;">Contact Us</h3>
+        <form action="mailto:benjava93@outlook.com" method="POST" enctype="text/plain" style="display:flex; flex-direction:column; gap:1.2rem;">
+          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+            <label for="name" style="font-weight:500; color:#333;">Your Name</label>
+            <input type="text" id="name" name="name" required style="padding:0.8rem; border:1px solid #ddd; border-radius:8px; font-size:1rem;">
+          </div>
+          
+          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+            <label for="email" style="font-weight:500; color:#333;">Your Email</label>
+            <input type="email" id="email" name="email" required style="padding:0.8rem; border:1px solid #ddd; border-radius:8px; font-size:1rem;">
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+            <label for="subject" style="font-weight:500; color:#333;">Subject</label>
+            <select id="subject" name="subject" required style="padding:0.8rem; border:1px solid #ddd; border-radius:8px; font-size:1rem;">
+              <option value="">Please select a topic...</option>
+              <option value="tree-planting">Tree Planting</option>
+              <option value="materials-support">Materials Support</option>
+              <option value="visit">Planning a Visit</option>
+              <option value="other">Other Inquiry</option>
+            </select>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+            <label for="message" style="font-weight:500; color:#333;">Your Message</label>
+            <textarea id="message" name="message" required rows="5" style="padding:0.8rem; border:1px solid #ddd; border-radius:8px; font-size:1rem; resize:vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="cta-btn" style="width:100%; margin-top:1rem; cursor:pointer;">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>FOM AFSAHEY — Cultivating hope in the desert. Thank you for supporting our journey.</p>
+    <div class="footer-note">© 2025 FOM AFSAHEY. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Lahcen Farm</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Responsive styles for all screen sizes */
+    @media screen and (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 1.8rem !important;
+      }
+      .hero-content p {
+        font-size: 1rem !important;
+        padding: 0 1rem;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5rem;
+      }
+      .logo-container {
+        justify-content: center;
+        padding: 0.5rem;
+      }
+    }
+
+    /* Base responsive layout improvements */
+    .hero {
+      min-height: 80vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      margin: 2rem auto;
+      max-width: min(90%, 800px);
+    }
+
+    /* Card grid system */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      padding: 2rem 1.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* General responsive improvements */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section-container {
+      max-width: min(90%, 1200px);
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Button improvements */
+    .cta-btn, .shop-btn {
+      display: inline-block;
+      padding: 0.8em 1.6em;
+      margin: 0.5rem;
+      white-space: nowrap;
+    }
+
+    /* Text responsiveness */
+    @media screen and (max-width: 480px) {
+      h1 { font-size: 1.5rem !important; }
+      h2 { font-size: 1.3rem !important; }
+      h3 { font-size: 1.1rem !important; }
+      p { font-size: 0.95rem !important; }
+    }
+
+    /* Layout fixes for very small screens */
+    @media screen and (max-width: 360px) {
+      .section-container {
+        padding: 1rem 0.5rem;
+      }
+      .card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="image.jpg" alt="FOM AFSAHEY logo" class="logo-img">
+        <span class="logo-text">FOM AFSAHEY</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Plan Your Visit</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about" style="display: flex; align-items: flex-start; gap: 2.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
+      <div style="display: flex; flex-direction: column; gap: 2rem; align-items: flex-start;">
+        <img src="lahcen1.JPG" alt="Lahcen among the trees at FOM AFSAHEY" style="width:520px; max-width:100%; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.08); object-fit:cover; background:#fff;">
+        <img src="lahcen.JPG" alt="Lahcen at FOM AFSAHEY" style="width:520px; max-width:100%; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.08); object-fit:cover; background:#fff;">
+        <img src="tine.JPG" alt="Figs at FOM AFSAHEY" style="width:520px; max-width:100%; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.08); object-fit:cover; background:#fff;">
+      </div>
+      <div style="flex:1; min-width:240px; align-self: center; display: flex; flex-direction: column; gap: 1.2rem;">
+        <h2 style="font-size:2.2rem; margin-bottom:0.5rem;">A Dream to Make the Desert Green Again</h2>
+        <p><strong>Meet Lahcen, the heart and hands behind FOM AFSAHEY.</strong></p>
+        <p>My name is Lahcen, and I am 88 years old.</p>
+        <p>Thirty years ago, this land was nothing but dry soil and silence, no trees, no water, just rocks and dust. But I had a dream. Together with my brother, we started this farm from nothing. We dug, planted, prayed, and waited. Slowly, this place came to life.</p>
+        <p>I started with one water well, but it wasn't enough. So I dug a second one, still, not enough. Then I received a grant from the government to buy a solar pump so I could bring more water from underground. But I still need more batteries for it to work properly.</p>
+        <p>The land itself is tired. It needs care. It needs a tractor to help make it fertile again, to turn the soil and give life another chance.</p>
+        <p>Despite the challenges, I have not given up. Afsahey remains a place of hope and now, I invite you to be part of it.</p>
+        <p>Bring your own tree, plant it in this sacred soil, and watch it grow. Here in Afsahey, every tree carries meaning, and every act of giving earns حسنات (hasanat) ,blessings in this life and the next. This is my dream: to make the land green again, to restore its beauty, its spirit, and its purpose. Whether you contribute a tree, a battery, a tractor, or simply offer a heartfelt duʿāʾ (prayer), your support matters deeply.</p>
+        <p><strong>Together, we can revive this land and pass on a legacy of growth and goodness.</strong>
+        <p><em>Visitors are welcome to plant their tree, leave their mark, and join this living journey of renewal and reward.</em></p>
+        <p style="margin-top:1.5rem;"><strong>Baraka Allah fikom.</strong><br>With gratitude,<br>Lahcen</p>
+        <div style="text-align:center; margin-top:2.2rem;">
+          <a href="donate.html" class="cta-btn" aria-label="Join us—help make the desert bloom again." style="display:inline-flex; align-items:center; gap:0.7em; font-size:1.13rem;">
+            <span style="font-size:1.3em; line-height:1;">🌱</span>
+            Join us—help make the desert bloom again.
+          </a>
+        </div>
+        <style>
+        .cta-btn {
+          transition: transform 0.18s cubic-bezier(.4,2,.6,1), background 0.18s, color 0.18s;
+        }
+        .cta-btn:hover, .cta-btn:focus {
+          background: #222 !important;
+          color: #fff !important;
+          transform: scale(1.06);
+        }
+        </style>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>FOM AFSAHEY — Cultivating hope in the desert. Thank you for supporting our journey.</p>
+    <div class="footer-note">© 2025 FOM AFSAHEY. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
